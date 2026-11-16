@@ -195,6 +195,7 @@ SCHEMA_TEST_EXAMPLES := \
 	antibody_test \
 	assembly_component_test \
 	cassette_test \
+	cell_line_test \
 	chromosome_test \
 	construct_test \
 	disease_agm_test \
