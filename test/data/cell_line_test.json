@@ -1,0 +1,88 @@
+{
+  "linkml_version": "2.0.0",
+  "cell_line_ingest_set": [
+    {
+      "created_by_curie": "FB:FBperson0000001",
+      "updated_by_curie": "FB:FBperson0000001",
+      "internal": false,
+      "obsolete": false,
+      "primary_external_id": "FB:FBtc0000001",
+      "name": "Kc167",
+      "taxon_curie": "NCBITaxon:7227",
+      "cell_line_synonym_dtos": [
+        {
+          "name_type_name": "synonym",
+          "format_text": "Kc",
+          "display_text": "Kc",
+          "synonym_scope_name": "exact",
+          "evidence_curies": [
+            "PMID:8769651",
+            "PMID:21177962"
+          ],
+          "internal": false
+        },
+        {
+          "name_type_name": "synonym",
+          "format_text": "Kc-167",
+          "display_text": "Kc-167",
+          "synonym_scope_name": "exact",
+          "evidence_curies": [
+            "PMID:25289637"
+          ],
+          "internal": false
+        },
+        {
+          "name_type_name": "synonym",
+          "format_text": "Kc167-DGRC",
+          "display_text": "Kc167-DGRC",
+          "synonym_scope_name": "exact",
+          "evidence_curies": [
+            "PMID:40773235"
+          ],
+          "internal": false
+        }
+      ],
+      "cross_reference_dtos": [
+        {
+          "referenced_curie": "Cellosaurus:CVCL_Z834",
+          "prefix": "Cellosaurus",
+          "page_area": "default",
+          "display_name": "CVCL_Z834",
+          "internal": false
+        },
+        {
+          "referenced_curie": "RRID:CVCL_Z834",
+          "prefix": "RRID",
+          "page_area": "default",
+          "display_name": "CVCL_Z834",
+          "internal": false
+        },
+        {
+          "referenced_curie": "DGRC_cell_line:1",
+          "prefix": "DGRC_cell_line",
+          "page_area": "default",
+          "display_name": "1",
+          "internal": false
+        }
+      ],
+      "reference_curies": [
+        "PMID:39608634",
+        "PMID:40052135",
+        "PMID:40164442",
+        "PMID:40105146",
+        "PMID:40163969"
+      ],
+      "data_provider_dto": {
+        "source_organization_abbreviation": "FB",
+        "cross_reference_dto": {
+          "referenced_curie": "FB:FBtc0000001",
+          "prefix": "FB",
+          "page_area": "cell_line",
+          "display_name": "FB:FBtc0000001",
+          "internal": false
+        },
+        "internal": false
+      }
+    }
+  ]
+}

@@ -655,7 +655,75 @@ classes:
   RNAClone:
     is_a: Reagent
 
+  CellLine:
+    is_a: Reagent
+    description: >-
+      A cultured cell population used in research, e.g. an immortalized or primary
+      cell line maintained in vitro.
+    slots:
+      - name
+      - cell_line_synonyms
+      - taxon
+      - cross_references
+      - references
+    slot_usage:
+      curie:
+        identifier: true
+      name:
+        description: >-
+          Publicly displayed name of the cell line: e.g., Kc167.
+        required: true
+      taxon:
+        required: true
+
+  CellLineDTO:
+    is_a: ReagentDTO
+    description: >-
+      Ingest class for cell lines.
+    slots:
+      - name
+      - cell_line_synonym_dtos
+      - taxon_curie
+      - cross_reference_dtos
+      - reference_curies
+    slot_usage:
+      name:
+        description: >-
+          Publicly displayed name of the cell line: e.g., Kc167.
+        required: true
+      taxon_curie:
+        required: true
+
+  CellLineSynonymSlotAnnotation:
+    description: >-
+      All aliases (non-preferred names) for the cell line. Any type of synonym is acceptable.
+    is_a: NameSlotAnnotation
+    slots:
+      - single_cell_line
+    slot_usage:
+      single_cell_line:
+        required: true
+
 slots:
+
+  cell_line_synonyms:
+    description: Holds between a CellLine and a list of synonyms.
+    domain: CellLine
+    required: false
+    multivalued: true
+    range: CellLineSynonymSlotAnnotation
+
+  cell_line_synonym_dtos:
+    description: Holds between a CellLine and a list of synonyms.
+    domain: CellLineDTO
+    range: NameSlotAnnotationDTO
+    multivalued: true
+    inlined: true
+    inlined_as_list: true
+
+  single_cell_line:
+    range: CellLine
+    multivalued: false
 
   antibody_synonyms:
     description: Holds between an Antibody and a list of synonyms.
